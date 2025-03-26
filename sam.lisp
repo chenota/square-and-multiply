@@ -34,7 +34,7 @@
                  ;; Print result
                  (let ((sam-result (apply #'sam args)))
                       (if verbose
-                          (progn (format t "k~Cc~Cf~%" #\tab #\tab)
+                          (progn (format t "b~Cc~Cf~%" #\tab #\tab)
                                  (loop for x in sam-result do 
                                     (format t "~C~C~D~C~D~%" (first x) #\tab (second x) #\tab (third x))))
                           (format t "~D~%" (third (car (last sam-result)))))))))
